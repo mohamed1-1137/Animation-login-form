@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/bootstrap.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/all.min.css">
+    <title>login form</title>
+</head>
+
+<body>
+    <div class="container">
+        <div class="blueBg">
+        <div class="box signIn">
+            <h2>Already Have an Account ?</h2>
+            <button class="signinBtn">Sign in</button>
+        </div>
+        <div class="box signUp">
+            <h2>Don't Have an Account</h2>
+            <button class="singupBtn">Sign up</button>
+        </div>
+        </div>
+        <div class="formBx active">
+        <div class="form signinForm">
+            <form action="">
+                <h3>sign in</h3>
+                <input type="text" placeholder="Username">
+                <span class="passContainerr">
+                    <span class="eyeContainerr">
+                    </span>
+                    <input type="password" placeholder="Password">
+                </span>
+                <input type="submit" value="login">
+                <a href="#" class="forget">Forget Password</a>
+            </form>
+        </div>
+        <div class="form signupForm  ">
+            <form action="">
+                <h3>sign up</h3>
+                <input type="text" placeholder="Username">
+                <input type="email" placeholder="Email Address">
+                <span class="passContainer">
+                <span class="eyeContainer">
+                    
+                </span>
+                <input type="password" placeholder="Password" onkeyup="checkPassword(this.value)">
+                </span>
+                <div class="accordion" id="accordionExample">
+                    <div class="card">
+                        <div class="card-header " id="headingOne">
+                            <h2 class="mb-0  w-10">
+                                    <i class="fa-solid fa-arrow-down btn btn-link btn-block text-right " type="button" data-toggle="collapse"
+                                    data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne" class=""></i>
+                            </h2>
+                        </div>
+                        <div id="collapseOne" class="collapse " aria-labelledby="headingOne" data-parent="#accordionExample">
+                            <div class="card-body">
+                                <ul class="passValidation">
+                                    <li class="lower">at least one lowercase character</li>
+                                    <li class="uper">at least one uppercase character</li>
+                                    <li class="number">at least one number</li>
+                                    <li class="specialC">at least one special character</li>
+                                    <li class="least8">at least 8 characters</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <input type="password" placeholder="Confirm Password">
+                <input type="submit" value="Register">
+            </form>
+        </div>
+        </div>
+    </div>
+    
+    <script src="./java script/main.js"></script>
+    <script src="./java script/popper.min.js"></script>
+    <script src="./java script/jquery-3.6.3.min.js"></script>
+    <script src="./java script/bootstrap.js"></script>
+</body>
+</html>

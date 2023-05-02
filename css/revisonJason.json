@@ -1,0 +1,12 @@
+{
+    "string":"Mohamed" ,
+    "object":{
+        "egy":"cairo",
+        "sau":"riad"
+    },
+    "array":["Mohamed","ahmed","Moaz"],
+    "booleant":true,
+    "booleanf":false,
+    "null":null
+
+}
